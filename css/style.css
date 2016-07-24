@@ -1,0 +1,117 @@
+.main-header {
+  min-width: 320px;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #283645;
+}
+.main-nav {
+  position: relative;
+  width: 100%;
+  min-height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav__list-links {
+  position: absolute;
+  top: 66px;
+  left: 0px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #283645;
+  z-index: 1;
+}
+.main-nav__list-links li {
+  width: 100%;
+  height: 63px;
+  border-bottom: 1px solid #000;
+}
+.main-nav__list-links li:first-child {
+  border-top: 1px solid #000;
+}
+.main-nav__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.btn-menu {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  margin-right: 20px;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+.btn-menu::after {
+  content: "";
+  position: absolute;
+  top: 11.5px;
+  left: 0px;
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+}
+html {
+  font-family: "PTSans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+/*figure {
+  margin: 0;
+  margin-right: -10px; //убираем отступ справа
+  margin-bottom: -10px; //убираем отступ снизу
+}
+
+input[type="button"],
+input[type="submit"] {
+//  border: none;
+  outline: none;
+  cursor: pointer;
+}*/
+/*@font-size-icon: 19px;
+
+@font-size--hotel-search-h2: 2.15rem;
+@line-height--hotel-search-h2: 1.15rem;
+@line-height--hotel-search-text: 1.2rem;
+@font-size--hotel-search-btn: 1.5rem;
+
+@font-size--hotel-sort: 0.85rem;
+@line-height--hotel-sort: 0.85rem;
+
+@font-size--form-hotel-search-h2: 1.15rem;
+
+@font-size--footer-hashtag: 1.5rem;
+
+@font-size--stars: 1.5rem;*/
+/*@color-brown: #766357;
+@color-brown--dark: darken(@color-brown, 10%);
+@color-blue: #81b3d2;
+@color-blue--dark: darken(#81b3d2, 10%);
+@color-gray: #eeeeee;
+@color-gray--dark: darken(#eeeeee, 10%);*/
