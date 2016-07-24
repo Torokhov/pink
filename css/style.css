@@ -40,12 +40,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .logo {
   margin-left: 20px;
   font-size: 32px;
   line-height: 32px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .btn-menu {
   position: relative;
@@ -64,13 +66,65 @@
   height: 3px;
   background-color: #fff;
 }
+.app-information {
+  min-height: 663px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-information__tagline {
+  width: 221px;
+}
+.app-information__system-requirements {
+  width: 241px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.app-information__system-requirements::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 22px;
+  width: 241px;
+  height: 69px;
+}
+.load-app-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-load-app {
+  display: block;
+  width: 281px;
+  padding: 15.5px 0;
+  margin-bottom: 80px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 4px solid #fff;
+  border-radius: 30px;
+}
+.btn-load-app:hover {
+  color: #d22856;
+  background-color: #fff;
+}
+.btn-load-app:active {
+  opacity: 0.3;
+}
 html {
   font-family: "PTSans", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   color: #fff;
-  text-transform: uppercase;
+}
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
 }
 ul {
   margin: 0;
