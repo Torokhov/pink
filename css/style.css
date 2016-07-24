@@ -199,6 +199,42 @@
   background-color: #fff;
   border: 2px solid #000;
 }
+.price-list {
+  min-height: 417px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.price-table {
+  margin-bottom: 30px;
+  min-width: 828px;
+}
+.price-table__price-value {
+  font-size: 24px;
+  font-weight: 300;
+}
+.price-table th {
+  width: 276px;
+  height: 94px;
+  color: #fff;
+  background-color: #283645;
+}
+.price-table th:first-child {
+  display: none;
+}
+.price-table td {
+  width: 251px;
+  height: 59px;
+  padding-left: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.price-table td:first-child {
+  display: none;
+}
 html {
   font-family: "PTSans", sans-serif;
   font-size: 18px;

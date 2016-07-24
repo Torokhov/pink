@@ -104,3 +104,52 @@
     border: 2px solid @color-black;
   }
 }
+
+.price-list {
+  min-height: 417px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: @color-gray;
+}
+
+.price-table {
+  margin-bottom: 30px;
+  min-width: 828px;
+
+  &__price-value {
+    font-size: @font-size--h2;
+    font-weight: @font-weight--light;
+  }
+
+  th {
+    width: 276px;
+    height: 94px;
+
+    color: @text-color--alt;
+
+    background-color: @color-blue--dark;
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+  td {
+    width: 251px;
+    height: 59px;
+    padding-left: 25px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+
+    background-color: @color-white;
+
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
