@@ -22,6 +22,7 @@
 
 .feature-wrapper {
   width: 100%;
+  min-height: 754px;
 
   background-color: @color-gray;
 }
@@ -39,5 +40,67 @@
 
     font-size: 14px;
     text-align: center;
+  }
+}
+
+.research-wrapper {
+  display: none;
+}
+
+.switch-btn {
+  display: none;
+}
+
+.reviews-block {
+  position: relative;
+  min-height: 377px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    width: 276px;
+
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &__autor-describe {
+    display: none;
+  }
+}
+
+.toggle-wrapper {
+//  position: absolute;
+  width: 66px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  width: 6px;
+  height: 6px;
+
+  background-color: @color-gray--dark;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--active {
+    background-color: @color-white;
+
+    border: 2px solid @color-black;
   }
 }
