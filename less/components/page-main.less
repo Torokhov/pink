@@ -1,0 +1,43 @@
+.main-block {
+  min-width: 320px;
+  max-width: 700px;
+//  width: 320px;
+  margin: 0 auto;
+}
+
+.app-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__head {
+    width: 220px;
+
+    &:nth-child(2) {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.feature-wrapper {
+  width: 100%;
+
+  background-color: @color-gray;
+}
+
+.feature {
+  margin-bottom: 40px;
+
+  &__head {
+    margin-bottom: 0px;
+  }
+
+  &__describe {
+    width: 252px;
+    margin: 0 auto;
+
+    font-size: 14px;
+    text-align: center;
+  }
+}
