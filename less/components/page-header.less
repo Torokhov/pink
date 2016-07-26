@@ -157,3 +157,26 @@
     opacity: 0.3;
   }
 }
+
+@media(min-width: 700px) and (max-width: 1200px) {
+  .logo {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 40px;
+    }
+  }
+
+  .app-information {
+    align-items: flex-start;
+    padding: 0 40px;
+
+    &__tagline {
+      margin-left: 32px;
+
+      font-size: @font-size--h2-tablet;
+      line-height: 48px;
+    }
+  }
+}
