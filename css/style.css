@@ -259,6 +259,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .contacts-block__head {
   width: 230px;
@@ -353,6 +354,32 @@
   }
   .toggle-wrapper--price {
     display: none;
+  }
+  .contacts-block__head {
+    width: 374px;
+    font-size: 40px;
+    line-height: 53px;
+  }
+  .contacts-block__item:first-child {
+    width: 50%;
+    order: 0;
+  }
+  .contacts-block__item:nth-child(3) {
+    width: 50%;
+    order: 1;
+  }
+  .contacts-block__item:nth-child(2) {
+    width: 100%;
+    order: 2;
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 .main-footer {
