@@ -60,3 +60,63 @@
     }
   }
 }
+
+@media(min-width: 1200px) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 127px;
+
+    background-color: @color-white;
+  }
+
+  .logo {
+    &--footer {
+      color: @color-black;
+    }
+  }
+
+  .social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 179px;
+  }
+
+  .social-btn {
+    display: block;
+    width: 43px;
+    height: 42px;
+
+    border: 3px solid @color-gray;
+    border-radius: 50%;
+  }
+
+  .copyright {
+    position: relative;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .autor-logo {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 30px;;
+    }
+  }
+
+  .htmlacademy-logo {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 33px;
+    }
+  }
+}
