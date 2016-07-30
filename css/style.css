@@ -4,6 +4,9 @@
   margin: 0 auto;
   color: #fff;
   background-color: #283645;
+  background-image: url("../../img/decor/iphone-5-in-hand-mobile.png"), url("../../img/decor/background-header-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 172px, top;
 }
 .main-nav {
   position: relative;
@@ -13,6 +16,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(29, 38, 49, 0.5);
 }
 .main-nav__list-links {
   position: absolute;
