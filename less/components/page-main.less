@@ -12,41 +12,53 @@
   justify-content: flex-start;
   align-items: center;
 
+  overflow: hidden;
+
   &__head {
     width: 220px;
+    min-height: 249px;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+
+    p:first-child {
+      margin-bottom: 27px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 650px;
+    top: 725px;
     left: 81.5px;
     width: 157px;
     height: 320px;
 
-    background-image: url("../../img/decor/iphone-screen-3.png")
+    background-image: url("../../img/decor/iphone-screen-3.png");
   }
 }
 
 .feature-wrapper {
   width: 100%;
   min-height: 754px;
+  padding: 47px 0;
+  box-sizing: border-box;
 
   background-color: @color-gray;
 }
 
 .feature {
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   &__head {
-    margin-bottom: 0px;
+    margin-bottom: 8px;
   }
 
   &__describe {
-    width: 252px;
-    margin: 0 auto;
+    padding: 0 20px;
 
     font-size: 14px;
+    line-height: 24px;
     text-align: center;
   }
 }
@@ -61,10 +73,13 @@
 
 .reviews-block {
   position: relative;
-  min-height: 377px;
+  min-height: 379px;
+  padding-top: 42px;
+  padding-bottom: 72px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -83,6 +98,10 @@
     font-size: 14px;
   }
 
+  &__autor {
+    margin-bottom: 10px;
+  }
+
   &__autor-describe {
     display: none;
   }
@@ -96,6 +115,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  &--price {
+    height: 94px;
+  }
 }
 
 .toggle-btn {
@@ -111,15 +134,17 @@
   &--active {
     background-color: @color-white;
 
-    border: 2px solid @color-black;
+    border: 3px solid @color-black;
   }
 }
 
 .price-list {
-  min-height: 417px;
+  min-height: 445px;
+  padding-top: 62px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   overflow: hidden;
@@ -128,8 +153,9 @@
 }
 
 .price-table {
-  margin-bottom: 30px;
   min-width: 828px;
+
+  background-color: @color-gray--dark;
 
   &__price-value {
     font-size: @font-size--h2;
@@ -139,8 +165,10 @@
   th {
     width: 276px;
     height: 94px;
+    box-sizing: border-box;
 
     color: @text-color--alt;
+    text-transform: uppercase;
 
     background-color: @color-blue--dark;
 
@@ -154,6 +182,7 @@
     width: 251px;
     height: 59px;
     padding-left: 25px;
+    box-sizing: border-box;
 
     font-size: 14px;
     text-transform: uppercase;
@@ -167,17 +196,21 @@
 }
 
 .contacts-block {
+  width: 100%;
+  padding-top: 40px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
 
   &__head {
     width: 230px;
+    margin-bottom: 27px;
   }
 
   &__item {
+    margin-bottom: 17px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -193,17 +226,24 @@
   }
 }
 
+.contacts-wrapper {
+  min-height: 282px;
+}
+
 .map {
   height: 200px;
   width: 100%;
 
   background-image: url("../../img/decor/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-@media(min-width: 700px) and (max-width: 1200px) {
+/* @media(min-width: 700px) and (max-width: 1200px) {
   .main-block {
-    min-width: 700px;
-    max-width: 1200px;
+//    min-width: 700px;
+//    max-width: 1200px;
+    width: 700px;
   }
 
   .app-features {
@@ -537,4 +577,4 @@
     align-items: center;
     width: 100%;
   }
-}
+}*/

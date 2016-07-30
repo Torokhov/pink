@@ -81,37 +81,42 @@
 .btn-menu {
   position: relative;
   width: 50px;
-  height: 26px;
+  height: 24px;
   margin-right: 20px;
+  box-sizing: border-box;
 
 //  background-color: @color-white;
 
-  border-bottom: 3px solid @color-white;
-  border-top: 3px solid @color-white;
+  border-bottom: 4px solid @color-white;
+  border-top: 4px solid @color-white;
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 11.5px;
+    top: 6px;
     left: 0px;
 
     width: 50px;
-    height: 3px;
+    height: 4px;
 
     background-color: @color-white;
   }
 }
 
 .app-information {
-  min-height: 663px;
+  min-height: 664px;
+  padding: 20px 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
   &__tagline {
-    width: 221px;
+    width: 230px;
+
+    font-weight: @font-weight--light;
   }
 
   &__system-requirements {
@@ -120,17 +125,6 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: @font-weight--light;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 70px;
-      left: 22px;
-      width: 241px;
-      height: 69px;
-
-//      background-color: #ffffff;
-    }
   }
 }
 
@@ -138,15 +132,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  min-height: 252px;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+
+  background-color: @color-blue--dark;
 }
 
 .btn-load-app {
   display: block;
   width: 281px;
   padding: 15.5px 0;
-  margin-bottom: 80px;
+//  margin-bottom: 80px;
 
   line-height: 18px;
   font-weight: @font-weight--bold;
@@ -166,10 +167,19 @@
   }
 }
 
-@media(min-width: 700px) and (max-width: 1200px) {
+.os-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+}
+
+/*@media(min-width: 700px) and (max-width: 1200px) {
   .main-header {
-    min-width: 700px;
-    max-width: 1200px;
+//    min-width: 700px;
+//    max-width: 1200px;
+    width: 700px;
   }
 
   .logo {
@@ -251,4 +261,4 @@
       line-height: 48px;
     }
   }
-}
+}*/
