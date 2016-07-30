@@ -195,6 +195,7 @@
   margin: 0 auto;
 }
 .app-features {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -202,6 +203,15 @@
 }
 .app-features__head {
   width: 220px;
+}
+.app-features::after {
+  content: "";
+  position: absolute;
+  top: 650px;
+  left: 81.5px;
+  width: 157px;
+  height: 320px;
+  background-image: url("../../img/decor/iphone-screen-3.png");
 }
 .feature-wrapper {
   width: 100%;
