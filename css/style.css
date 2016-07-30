@@ -547,6 +547,27 @@
   .price-table td:first-child {
     display: table-cell;
   }
+  .contacts-block__head {
+    width: 470px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .contacts-block__item:first-child {
+    order: 0;
+  }
+  .contacts-block__item:nth-child(3) {
+    order: 0;
+  }
+  .contacts-block__item:nth-child(2) {
+    order: 0;
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 }
 .main-footer {
   display: none;

@@ -479,4 +479,38 @@
       }
     }
   }
+
+  .contacts-block {
+    &__head {
+      width: 470px;
+
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    &__item {
+      &:first-child {
+//        width: 30%;
+        order: 0;
+      }
+
+      &:nth-child(3) {
+//        width: 30%;
+        order: 0;
+      }
+
+      &:nth-child(2) {
+//        width: 30%;
+        order: 0;
+      }
+    }
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 }
