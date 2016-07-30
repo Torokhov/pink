@@ -1,6 +1,5 @@
 .main-header {
-  min-width: 320px;
-  max-width: 700px;
+  width: 320px;
   margin: 0 auto;
   color: #fff;
   background-color: #283645;
@@ -190,8 +189,7 @@
   }
 }
 .main-block {
-  min-width: 320px;
-  max-width: 700px;
+  width: 320px;
   margin: 0 auto;
 }
 .app-features {
@@ -285,6 +283,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   background-color: #f2f2f2;
 }
 .price-table {
@@ -340,6 +339,7 @@
 .map {
   height: 200px;
   width: 100%;
+  background-image: url("../../img/decor/map-mobile.jpg");
 }
 @media (min-width: 700px) and (max-width: 1200px) {
   .main-block {
