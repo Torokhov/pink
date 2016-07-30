@@ -449,4 +449,34 @@
       right: 200px;
     }
   }
+
+  .price-list {
+    padding: 0 120px;
+    box-sizing: border-box;
+  }
+
+  .price-table {
+    margin-bottom: 30px;
+    min-width: 100%;
+//    width: 100%;
+
+    &__feature {
+      display: none;
+    }
+
+    th {
+//    width: 152px;
+      height: 75px;
+       &:first-child {
+        display: table-cell;
+        background-color: @color-gray;
+      }
+    }
+
+    td {
+      &:first-child {
+        display: table-cell;
+      }
+    }
+  }
 }

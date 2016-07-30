@@ -526,6 +526,27 @@
     top: 150px;
     right: 200px;
   }
+  .price-list {
+    padding: 0 120px;
+    box-sizing: border-box;
+  }
+  .price-table {
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+  .price-table__feature {
+    display: none;
+  }
+  .price-table th {
+    height: 75px;
+  }
+  .price-table th:first-child {
+    display: table-cell;
+    background-color: #f2f2f2;
+  }
+  .price-table td:first-child {
+    display: table-cell;
+  }
 }
 .main-footer {
   display: none;
