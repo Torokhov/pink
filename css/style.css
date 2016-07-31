@@ -248,11 +248,21 @@
   background-image: url("../../img/decor/iphone-screen-3.png");
 }
 .feature-wrapper {
+  position: relative;
   width: 100%;
   min-height: 754px;
   padding: 47px 0;
   box-sizing: border-box;
   background-color: #f2f2f2;
+}
+.feature-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -345px;
+  left: 0px;
+  border: 320px solid transparent;
+  border-right: 20px solid #f2f2f2;
+  border-bottom: 26px solid #f2f2f2;
 }
 .feature {
   margin-bottom: 27px;
@@ -273,10 +283,9 @@
   display: none;
 }
 .reviews-block {
-  position: relative;
-  min-height: 379px;
+  min-height: 342px;
   padding-top: 42px;
-  padding-bottom: 72px;
+  padding-bottom: 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column-reverse;
@@ -311,7 +320,11 @@
   align-items: center;
 }
 .toggle-wrapper--price {
-  height: 94px;
+  min-height: 104px;
+  width: 100%;
+  padding: 0 132px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 .toggle-btn {
   width: 6px;
@@ -325,12 +338,31 @@
   border: 3px solid #000;
 }
 .price-list {
-  min-height: 445px;
-  padding-top: 62px;
+  position: relative;
+  min-height: 482px;
+  padding-top: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.price-list::before {
+  content: "";
+  position: absolute;
+  top: -316px;
+  left: 0px;
+  border: 320px solid transparent;
+  border-right: 20px solid #f2f2f2;
+  border-bottom: 26px solid #f2f2f2;
+}
+.price-table-wrapper {
+  width: 320px;
+  min-height: 346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
   background-color: #f2f2f2;
@@ -339,9 +371,11 @@
   min-width: 828px;
   background-color: #bfbfbf;
 }
-.price-table__price-value {
-  font-size: 24px;
-  font-weight: 300;
+.price-table__feature {
+  display: inline-block;
+  width: 135px;
+  margin-right: 55px;
+  vertical-align: top;
 }
 .price-table th {
   position: relative;
@@ -359,7 +393,7 @@
 .price-table td {
   width: 251px;
   height: 59px;
-  padding-left: 25px;
+  padding: 0 25px;
   box-sizing: border-box;
   font-size: 14px;
   text-transform: uppercase;
@@ -386,6 +420,7 @@
   transform: rotate(-45deg);
 }
 .contacts-block {
+  position: relative;
   width: 100%;
   padding-top: 40px;
   box-sizing: border-box;
@@ -413,13 +448,34 @@
 }
 .contacts-wrapper {
   min-height: 282px;
+  z-index: 5;
+}
+.contacts-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 409px;
+  left: 0px;
+  border: 160px solid transparent;
+  border-top: 36px solid #fff;
 }
 .map {
   height: 200px;
   width: 100%;
+  position: relative;
   background-image: url("../../img/decor/map-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+.map::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 93px;
+  left: 140px;
+  background-color: #d22856;
+  border-radius: 50%;
+  border: 12px solid #fff;
 }
 /* @media(min-width: 700px) and (max-width: 1200px) {
   .main-block {

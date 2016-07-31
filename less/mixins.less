@@ -1,0 +1,25 @@
+.sloping-background(@_top:-345px) {
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: @_top;
+    left: 0px;
+
+    border: 320px solid transparent;
+    border-right: 20px solid @color-gray;
+    border-bottom: 26px solid @color-gray;
+  }
+}
+
+.triangle-bottom(@_top: 0px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: @_top;
+    left: 0px;
+
+    border: 160px solid transparent;
+    border-top: 36px solid @color-white;
+  }
+}

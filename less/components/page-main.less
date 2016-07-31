@@ -39,6 +39,9 @@
 }
 
 .feature-wrapper {
+  .sloping-background;
+
+  position: relative;
   width: 100%;
   min-height: 754px;
   padding: 47px 0;
@@ -72,10 +75,10 @@
 }
 
 .reviews-block {
-  position: relative;
-  min-height: 379px;
+//  position: relative;
+  min-height: 342px;
   padding-top: 42px;
-  padding-bottom: 72px;
+  padding-bottom: 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column-reverse;
@@ -117,7 +120,12 @@
   align-items: center;
 
   &--price {
-    height: 94px;
+    min-height: 104px;
+    width: 100%;
+    padding: 0 132px;
+    box-sizing: border-box;
+
+    background-color: @color-gray;
   }
 }
 
@@ -139,12 +147,28 @@
 }
 
 .price-list {
-  min-height: 445px;
-  padding-top: 62px;
+  .sloping-background(-316px);
+
+  position: relative;
+  min-height: 482px;
+  padding-top: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+
+  overflow: hidden;
+
+//  background-color: @color-gray;
+}
+
+.price-table-wrapper {
+  width: 320px;
+  min-height: 346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 
   overflow: hidden;
@@ -157,9 +181,12 @@
 
   background-color: @color-gray--dark;
 
-  &__price-value {
-    font-size: @font-size--h2;
-    font-weight: @font-weight--light;
+  &__feature {
+    display: inline-block;
+    width: 135px;
+    margin-right: 55px;
+
+    vertical-align: top;
   }
 
   th {
@@ -184,7 +211,7 @@
   td {
     width: 251px;
     height: 59px;
-    padding-left: 25px;
+    padding: 0 25px;
     box-sizing: border-box;
 
     font-size: 14px;
@@ -222,6 +249,7 @@
 }
 
 .contacts-block {
+  position: relative;
   width: 100%;
   padding-top: 40px;
   box-sizing: border-box;
@@ -253,16 +281,36 @@
 }
 
 .contacts-wrapper {
+  .triangle-bottom(409px);
+
   min-height: 282px;
+
+  z-index: 5;
 }
 
 .map {
   height: 200px;
   width: 100%;
 
+  position: relative;
+
   background-image: url("../../img/decor/map-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 93px;
+    left: 140px;
+
+    background-color: @color-pink;
+
+    border-radius: 50%;
+    border: 12px solid @color-white;
+  }
 }
 
 /* @media(min-width: 700px) and (max-width: 1200px) {
