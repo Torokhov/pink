@@ -19,7 +19,8 @@
   position: relative;
   width: 100%;
   min-height: 66px;
-//  padding: 0 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,7 +33,7 @@
     top: 66px;
     left: 0px;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -76,7 +77,7 @@
 }
 
 .logo {
-  margin-left: 20px;
+//  margin-left: 20px;
 
   font-size: 32px;
   line-height: 32px;
@@ -90,7 +91,7 @@
   position: relative;
   width: 50px;
   height: 24px;
-  margin-right: 20px;
+//  margin-right: 20px;
   box-sizing: border-box;
 
 //  background-color: @color-white;
@@ -197,19 +198,33 @@
   width: 210px;
 }
 
-/*@media(min-width: 700px) and (max-width: 1200px) {
+@media(min-width: 700px) and (max-width: 1200px) {
   .main-header {
 //    min-width: 700px;
 //    max-width: 1200px;
     width: 700px;
   }
 
+  .main-nav {
+    min-height: 110px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
   .logo {
+    margin-left: 70px;
+
     &::before {
       content: "";
       position: absolute;
+      top: 28px;
+      left: 40px;
       width: 59px;
       height: 40px;
+
+      background-image: url("../../img/sprites/spritesheet.png");
+      background-repeat: no-repeat;
+      background-position: -59px -80px;
     }
   }
 
@@ -226,7 +241,7 @@
   }
 }
 
-@media(min-width: 1200px) and (max-width: 1440px) {
+/* @media(min-width: 1200px) and (max-width: 1440px) {
   .main-header {
     min-width: 1200px;
     max-width: 1440px;
