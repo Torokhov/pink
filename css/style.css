@@ -73,6 +73,15 @@
   height: 4px;
   background-color: #fff;
 }
+.btn-menu:hover {
+  border-color: #d22856;
+}
+.btn-menu:hover::after {
+  background-color: #d22856;
+}
+.btn-menu:active {
+  opacity: 0.5;
+}
 .app-information {
   min-height: 664px;
   padding: 20px 0;
@@ -333,7 +342,21 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.toggle-btn:hover {
+  background-color: #000;
+}
+.toggle-btn:active {
+  opacity: 0.5;
+}
 .toggle-btn--active {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+.toggle-btn--active:hover {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+.toggle-btn--active:active {
   background-color: #fff;
   border: 3px solid #000;
 }
@@ -445,6 +468,16 @@
   text-align: center;
   font-size: 24px;
   color: #d22856;
+}
+.contacts-block__item-describe a {
+  color: inherit;
+}
+.contacts-block__item-describe a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.contacts-block__item-describe a:active {
+  opacity: 0.5;
 }
 .contacts-wrapper {
   min-height: 282px;

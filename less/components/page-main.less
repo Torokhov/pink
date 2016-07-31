@@ -139,10 +139,30 @@
 
   cursor: pointer;
 
+  &:hover {
+    background-color: @color-black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &--active {
     background-color: @color-white;
 
     border: 3px solid @color-black;
+
+    &:hover {
+      background-color: @color-white;
+
+      border: 3px solid @color-black;
+    }
+
+    &:active {
+      background-color: @color-white;
+
+      border: 3px solid @color-black;
+    }
   }
 }
 
@@ -277,6 +297,19 @@
     text-align: center;
     font-size: @font-size--h2;
     color: @color-pink;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: @color-black;
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
   }
 }
 

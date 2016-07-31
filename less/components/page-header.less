@@ -102,6 +102,18 @@
 
     background-color: @color-white;
   }
+
+  &:hover {
+    border-color: @color-pink;
+
+    &::after {
+      background-color: @color-pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .app-information {
