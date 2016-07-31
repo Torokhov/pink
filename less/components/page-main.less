@@ -163,6 +163,7 @@
   }
 
   th {
+    position: relative;
     width: 276px;
     height: 94px;
     box-sizing: border-box;
@@ -171,6 +172,8 @@
     text-transform: uppercase;
 
     background-color: @color-blue--dark;
+
+    overflow: hidden;
 
     &:first-child {
       display: none;
@@ -192,6 +195,29 @@
     &:first-child {
       display: none;
     }
+  }
+}
+
+.hit {
+  &::after {
+    content: "хит";
+    width: 94px;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: -22px;
+
+    font-size: 14px;
+    font-weight: @font-weight;
+    color: @color-white;
+
+    background-color: @color-pink;
+
+    transform: rotate(-45deg);
   }
 }
 

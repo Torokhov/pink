@@ -344,12 +344,14 @@
   font-weight: 300;
 }
 .price-table th {
+  position: relative;
   width: 276px;
   height: 94px;
   box-sizing: border-box;
   color: #fff;
   text-transform: uppercase;
   background-color: #283645;
+  overflow: hidden;
 }
 .price-table th:first-child {
   display: none;
@@ -365,6 +367,23 @@
 }
 .price-table td:first-child {
   display: none;
+}
+.hit::after {
+  content: "хит";
+  width: 94px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  left: -22px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #d22856;
+  transform: rotate(-45deg);
 }
 .contacts-block {
   width: 100%;
