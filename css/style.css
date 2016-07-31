@@ -115,7 +115,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 252px;
-  width: 100%;
+  width: 320px;
   padding-top: 28px;
   padding-bottom: 10px;
   box-sizing: border-box;
@@ -148,6 +148,9 @@
 @media (min-width: 700px) and (max-width: 1200px) {
   .main-header {
     width: 700px;
+    background-image: url("../../img/decor/iphone-5-in-hand-tablet.png"), url("../../img/decor/background-header-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 182px, top;
   }
   .main-nav {
     min-height: 110px;
@@ -169,13 +172,27 @@
     background-position: -59px -80px;
   }
   .app-information {
+    padding: 0 20px;
+    padding-top: 92px;
+    box-sizing: border-box;
+    min-height: 617px;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 40px;
   }
   .app-information__tagline {
-    margin-left: 32px;
+    margin-left: 54px;
     font-size: 40px;
     line-height: 48px;
+  }
+  .app-information__system-requirements {
+    width: 320px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .load-app-wrapper {
+    min-height: 381px;
+    padding-bottom: 110px;
+    background-color: transparent;
   }
 }
 /* @media(min-width: 1200px) and (max-width: 1440px) {
