@@ -12,14 +12,14 @@
   }
 }
 
-.triangle-bottom(@_top: 0px) {
+.triangle-bottom(@_top: 0px, @_width: 160px, @_height: 36px) {
   &::before {
     content: "";
     position: absolute;
     top: @_top;
     left: 0px;
 
-    border: 160px solid transparent;
-    border-top: 36px solid @color-white;
+    border: @_width solid transparent;
+    border-top: @_height solid @color-white;
   }
 }

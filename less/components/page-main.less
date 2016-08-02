@@ -334,7 +334,15 @@
 }
 
 .contacts-wrapper {
-  .triangle-bottom(409px);
+  .triangle-bottom(@_top: 409px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: inherit;
 
   min-height: 282px;
 
@@ -611,6 +619,7 @@
   .contacts-block {
     &__head {
       width: 374px;
+      margin-bottom: 0;
 
       font-size: 40px;
       line-height: 53px;
@@ -619,33 +628,41 @@
     &__item {
       &:first-child {
         width: 50%;
-        order: 0;
+//        order: 0;
       }
 
       &:nth-child(3) {
-        width: 50%;
-        order: 1;
+        width: 100%;
+//        order: 1;
       }
 
       &:nth-child(2) {
-        width: 100%;
-        order: 2;
+        width: 50%;
+//        order: 2;
       }
     }
   }
 
   .map {
     min-height: 380px;
+
+    background-image: url("../../img/decor/map-tablet.jpg");
+
+    &::before {
+      top: 199px;
+      left: 330px;
+    }
   }
 
   .contacts-wrapper {
-    display: flex;
+    .triangle-bottom(398px, 350px, 36px);
+
+    min-height: 252px;
+    padding: 0 30px;
+    padding-top: 28p;
+    box-sizing: border-box;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    align-content: space-around;
   }
 }
 

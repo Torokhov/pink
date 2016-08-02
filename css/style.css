@@ -521,6 +521,13 @@
   opacity: 0.5;
 }
 .contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: inherit;
   min-height: 282px;
   z-index: 5;
 }
@@ -750,32 +757,42 @@
   }
   .contacts-block__head {
     width: 374px;
+    margin-bottom: 0;
     font-size: 40px;
     line-height: 53px;
   }
   .contacts-block__item:first-child {
     width: 50%;
-    order: 0;
   }
   .contacts-block__item:nth-child(3) {
-    width: 50%;
-    order: 1;
+    width: 100%;
   }
   .contacts-block__item:nth-child(2) {
-    width: 100%;
-    order: 2;
+    width: 50%;
   }
   .map {
     min-height: 380px;
+    background-image: url("../../img/decor/map-tablet.jpg");
+  }
+  .map::before {
+    top: 199px;
+    left: 330px;
   }
   .contacts-wrapper {
-    display: flex;
+    min-height: 252px;
+    padding: 0 30px;
+    padding-top: 28p;
+    box-sizing: border-box;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    align-content: space-around;
+  }
+  .contacts-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 398px;
+    left: 0px;
+    border: 350px solid transparent;
+    border-top: 36px solid #fff;
   }
 }
 /* @media(min-width: 1200px) {
