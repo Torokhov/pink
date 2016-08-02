@@ -1,4 +1,4 @@
-.sloping-background(@_top:-345px) {
+.sloping-background(@_top:-345px, @_border-height: 26px, @_border-width: 320px) {
 
   &::before {
     content: "";
@@ -6,9 +6,9 @@
     top: @_top;
     left: 0px;
 
-    border: 320px solid transparent;
+    border: @_border-width solid transparent;
     border-right: 20px solid @color-gray;
-    border-bottom: 26px solid @color-gray;
+    border-bottom: @_border-height solid @color-gray;
   }
 }
 

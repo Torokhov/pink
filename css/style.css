@@ -282,7 +282,7 @@
   left: 81.5px;
   width: 157px;
   height: 320px;
-  background-image: url("../../img/decor/iphone-screen-3.png");
+  background-image: url("../../img/decor/iphone-mobile.png");
 }
 .feature-wrapper {
   position: relative;
@@ -419,14 +419,17 @@
   background-color: #f2f2f2;
 }
 .price-table {
-  min-width: 828px;
-  background-color: #bfbfbf;
+  width: 828px;
+  border-collapse: collapse;
 }
 .price-table__feature {
   display: inline-block;
   width: 135px;
   margin-right: 55px;
   vertical-align: top;
+}
+.price-table__price-value {
+  font-weight: 300;
 }
 .price-table th {
   position: relative;
@@ -436,10 +439,14 @@
   color: #fff;
   text-transform: uppercase;
   background-color: #283645;
+  border-right: 2px solid #fff;
   overflow: hidden;
 }
 .price-table th:first-child {
   display: none;
+}
+.price-table th:last-child {
+  border-right: 2px solid #283645;
 }
 .price-table td {
   width: 251px;
@@ -449,9 +456,15 @@
   font-size: 14px;
   text-transform: uppercase;
   background-color: #fff;
+  border-right: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
 }
 .price-table td:first-child {
   display: none;
+  padding-left: 15px;
+  box-sizing: border-box;
+  border-left: 2px solid #bfbfbf;
+  border-top: 2px solid #bfbfbf;
 }
 .hit::after {
   content: "хит";
@@ -543,58 +556,168 @@
     width: 700px;
   }
   .app-features__head {
-    width: 585px;
+    width: 700px;
+    padding: 55px 0;
+    margin-bottom: 43px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 40px;
     line-height: 40px;
   }
+  .app-features__head p:first-child {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .app-features__head p:nth-child(2) {
+    width: 500px;
+  }
+  .app-features::after {
+    width: 268px;
+    height: 548px;
+    top: 247px;
+    left: 40px;
+    background-image: url("../../img/decor/iphone-screen-3.jpg"), url("../../img/decor/iphone-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center, top;
+  }
   .feature-wrapper {
+    min-height: 435px;
+    padding: 20px 40px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 0 40px;
-    min-height: 489px;
-    box-sizing: border-box;
+  }
+  .feature-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -755px;
+    left: 0px;
+    border: 700px solid transparent;
+    border-right: 20px solid #f2f2f2;
+    border-bottom: 55px solid #f2f2f2;
+  }
+  .feature {
+    width: 310px;
+    margin-bottom: 33px;
   }
   .feature__head,
   .feature__describe {
     text-align: left;
   }
+  .feature__describe {
+    padding: 0;
+  }
+  .feature:last-child {
+    margin-bottom: 0;
+  }
   .research-wrapper {
+    position: relative;
+    padding: 100px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
   }
+  .research-wrapper::before {
+    content: "24";
+    width: 194px;
+    height: 194px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 135px;
+    left: 74px;
+    font-size: 104px;
+    line-height: 150px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+  .research-wrapper svg {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    fill: #f2f2f2;
+  }
   .research {
-    width: 295px;
+    width: 310px;
   }
   .research__head {
     width: 180px;
+    margin-bottom: 18px;
     font-size: 30px;
+    line-height: 30px;
     text-align: left;
   }
   .research__describe {
+    margin-bottom: 5px;
     font-size: 14px;
+    line-height: 24px;
   }
   .research__link {
     font-size: 14px;
     color: #d22856;
     text-decoration: underline;
   }
+  .research__link:hover {
+    color: black;
+  }
+  .research__link:active {
+    opacity: 0.5;
+  }
+  .reviews-block {
+    min-height: 273px;
+    padding: 20px 0;
+  }
   .review {
     flex-direction: column;
   }
+  .review__autor {
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .review__text {
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 30px;
+  }
   .review__autor-describe {
     display: block;
+    font-size: 14px;
+    line-height: 30px;
   }
   .price-list {
+    min-height: 380px;
     padding: 0 40px;
+    padding-top: 53px;
     box-sizing: border-box;
   }
+  .price-list::before {
+    content: "";
+    position: absolute;
+    top: -702px;
+    left: 0px;
+    border: 700px solid transparent;
+    border-right: 20px solid #f2f2f2;
+    border-bottom: 55px solid #f2f2f2;
+  }
+  .price-table-wrapper {
+    width: 700px;
+    min-height: 325px;
+    padding-top: 43px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
   .price-table {
-    margin-bottom: 30px;
-    min-width: 100%;
+    width: 620px;
   }
   .price-table__feature {
     display: none;
@@ -606,8 +729,21 @@
     display: table-cell;
     background-color: #f2f2f2;
   }
+  .price-table td {
+    height: 45px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
   .price-table td:first-child {
     display: table-cell;
+    text-align: left;
+  }
+  .price-table td svg {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
   }
   .toggle-wrapper--price {
     display: none;

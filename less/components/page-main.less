@@ -34,7 +34,7 @@
     width: 157px;
     height: 320px;
 
-    background-image: url("../../img/decor/iphone-screen-3.png");
+    background-image: url("../../img/decor/iphone-mobile.png");
   }
 }
 
@@ -197,9 +197,10 @@
 }
 
 .price-table {
-  min-width: 828px;
+  width: 828px;
 
-  background-color: @color-gray--dark;
+  border-collapse: collapse;
+//  background-color: @color-gray--dark;
 
   &__feature {
     display: inline-block;
@@ -207,6 +208,10 @@
     margin-right: 55px;
 
     vertical-align: top;
+  }
+
+  &__price-value {
+    font-weight: @font-weight--light;
   }
 
   th {
@@ -220,11 +225,18 @@
 
     background-color: @color-blue--dark;
 
+    border-right: 2px solid @color-white;
+//    border-bottom: 2px solid @color-white;
+
     overflow: hidden;
 
     &:first-child {
       display: none;
 //      background-color: @color-gray;
+    }
+
+    &:last-child {
+      border-right: 2px solid @color-blue--dark;
     }
   }
 
@@ -239,8 +251,16 @@
 
     background-color: @color-white;
 
+    border-right: 2px solid @color-gray--dark;
+    border-bottom: 2px solid @color-gray--dark;
+
     &:first-child {
       display: none;
+      padding-left: 15px;
+      box-sizing: border-box;
+
+      border-left: 2px solid @color-gray--dark;
+      border-top: 2px solid @color-gray--dark;
     }
   }
 }
@@ -354,76 +374,198 @@
   }
 
   .app-features {
+//    padding: 0 40px;
+
     &__head {
-      width: 585px;
+      width: 700px;
+      padding: 55px 0;
+      margin-bottom: 43px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
 
       font-size: 40px;
       line-height: 40px;
+
+      p:first-child {
+        margin: 0;
+        margin-bottom: 12px;
+      }
+
+      p:nth-child(2) {
+        width: 500px;
+      }
+    }
+
+    &::after {
+      width: 268px;
+      height: 548px;
+      top: 247px;
+      left: 40px;
+
+      background-image:
+        url("../../img/decor/iphone-screen-3.jpg"),
+        url("../../img/decor/iphone-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center, top;
     }
   }
 
   .feature-wrapper {
+    .sloping-background(-755px, 55px, 700px);
+
+    min-height: 435px;
+    padding: 20px 40px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 0 40px;
-    min-height: 489px;
-    box-sizing: border-box;
   }
 
   .feature {
+    width: 310px;
+    margin-bottom: 33px;
+
     &__head,
     &__describe {
       text-align: left;
     }
+
+    &__describe {
+      padding: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .research-wrapper {
+    position: relative;
+    padding: 100px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    &::before {
+      content: "24";
+      width: 194px;
+      height: 194px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 135px;
+      left: 74px;
+
+      font-size: 104px;
+      line-height: 150px;
+      font-weight: @font-weight--bold;
+      vertical-align: middle;
+      text-align: center;
+      color: @color-pink;
+
+      border: 14px solid @color-pink;
+      border-radius: 50%;
+    }
+
+    svg {
+      position: absolute;
+      top: 60px;
+      left: 40px;
+
+      fill: @color-gray;
+    }
   }
 
   .research {
-    width: 295px;
+    width: 310px;
 
     &__head {
       width: 180px;
+      margin-bottom: 18px;
 
       font-size: 30px;
+      line-height: 30px;
       text-align: left;
     }
 
     &__describe {
+      margin-bottom: 5px;
+
       font-size: 14px;
+      line-height: 24px;
     }
 
     &__link {
       font-size: 14px;
       color: @color-pink;
       text-decoration: underline;
+
+      &:hover {
+        color: black;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
+  }
+
+  .reviews-block {
+    min-height: 273px;
+    padding: 20px 0;
+//    margin-bottom: 55px;
   }
 
   .review {
     flex-direction: column;
 
+    &__autor {
+      margin-bottom: 0px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      margin-bottom: 38px;
+
+      font-size: 18px;
+      line-height: 30px;
+    }
+
     &__autor-describe {
       display: block;
+
+      font-size: 14px;
+      line-height: 30px;
     }
   }
 
   .price-list {
+    .sloping-background(-702px, 55px, 700px);
+    min-height: 380px;
     padding: 0 40px;
+    padding-top: 53px;
     box-sizing: border-box;
   }
 
+  .price-table-wrapper {
+    width: 700px;
+    min-height: 325px;
+    padding-top: 43px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+
   .price-table {
-    margin-bottom: 30px;
-    min-width: 100%;
+//    margin-bottom: 30px;
+//    min-width: 100%;
 //    width: 100%;
+    width: 620px;
 
     &__feature {
       display: none;
@@ -439,8 +581,23 @@
     }
 
     td {
+      height: 45px;
+      padding: 0;
+      text-align: center;
+
+      font-size: 14px;
+      text-transform: capitalize;
+
       &:first-child {
         display: table-cell;
+        text-align: left;
+      }
+
+      svg {
+        display: inline-block;
+
+        text-align: center;
+        vertical-align: middle;
       }
     }
   }
