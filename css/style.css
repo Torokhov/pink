@@ -781,7 +781,7 @@
   .contacts-wrapper {
     min-height: 252px;
     padding: 0 30px;
-    padding-top: 28p;
+    padding-top: 28px;
     box-sizing: border-box;
     flex-direction: row;
     align-content: space-around;
@@ -792,7 +792,7 @@
     top: 398px;
     left: 0px;
     border: 350px solid transparent;
-    border-top: 36px solid #fff;
+    border-top: 72px solid #fff;
   }
 }
 /* @media(min-width: 1200px) {
@@ -990,49 +990,93 @@
 }*/
 .main-footer {
   display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 127px;
+  width: 700px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.logo-wrapper {
+  position: relative;
+}
+.logo--footer {
+  color: #000;
+}
+.logo--footer::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 59px;
+  height: 40px;
+  background-image: url("../../img/sprites/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: 0px -80px;
+}
+.social-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 179px;
+}
+.social-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 42px;
+  font-size: 0px;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+}
+.social-btn svg {
+  fill: #d22856;
+}
+.social-btn:hover {
+  border-color: #000;
+}
+.social-btn:active {
+  opacity: 0.5;
+}
+.copyright {
+  min-width: 190px;
+  min-height: 30px;
+  font-size: 14px;
+}
+.copyright__describe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.autor-logo,
+.htmlacademy-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+}
+.autor-logo svg,
+.htmlacademy-logo svg {
+  fill: #d22856;
+}
+.autor-logo:hover svg,
+.htmlacademy-logo:hover svg {
+  fill: #000;
+}
+.autor-logo:active svg,
+.htmlacademy-logo:active svg {
+  opacity: 0.5;
 }
 @media (min-width: 700px) and (max-width: 1200px) {
   .main-footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 127px;
-    width: 700px;
-    background-color: #fff;
-  }
-  .logo--footer {
-    color: #000;
-  }
-  .social-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 179px;
-  }
-  .social-btn {
-    display: block;
-    width: 43px;
-    height: 42px;
-    border: 3px solid #f2f2f2;
-    border-radius: 50%;
-  }
-  .copyright {
-    position: relative;
-    font-size: 14px;
-  }
-  .autor-logo::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 30px;
-  }
-  .htmlacademy-logo::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 33px;
   }
 }
 /* @media(min-width: 1200px) {
