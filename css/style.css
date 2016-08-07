@@ -195,64 +195,63 @@
     background-color: transparent;
   }
 }
-/* @media(min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1200px) {
   .main-header {
-    min-width: 1200px;
-    max-width: 1440px;
-    padding: 0 120px;
-    box-sizing: border-box;
-    justify-content: space-between;
+    width: 1200px;
+    min-height: 854px;
+    background-image: url("../../img/decor/iphone-5-in-hand-laptop.png"), url("../../img/decor/background-header-laptop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 147px 209px, top;
   }
-
+  .main-nav {
+    padding: 0 130px;
+  }
+  .main-nav__list-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 630px;
+    height: inherit;
+    background-color: transparent;
+  }
+  .main-nav__list-links li,
+  .main-nav__list-links li:first-child {
+    border: none;
+  }
+  .main-nav__link {
+    text-transform: capitalize;
+  }
   .logo {
-    margin-left: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 40px;
-    }
+    font-size: 0px;
   }
-
+  .logo::before {
+    top: 28px;
+    left: 130px;
+    width: 146px;
+    background-image: url("../../img/sprites/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: 0px -40px;
+  }
+  .app-information {
+    padding: 0px 120px;
+    padding-top: 115px;
+  }
+  .app-information__tagline {
+    margin-left: 40px;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 300;
+  }
+  .load-app-wrapper {
+    padding: 50px 0px;
+  }
   .btn-menu {
     display: none;
   }
-
-  .main-nav {
-    &__list-links {
-      position: static;
-      display: flex;
-      flex-direction: row;
-      width: 630px;
-
-      li {
-        width: auto;
-        border-bottom: none;
-
-        &:first-child {
-          border-top: none;
-        }
-      }
-    }
-
-    &__link {
-      text-transform: capitalize;
-    }
+  .btn-load-app {
+    font-size: 21px;
   }
-
-  .app-information {
-    align-items: flex-start;
-    padding: 0 40px;
-
-    &__tagline {
-      margin-left: 32px;
-
-      font-size: @font-size--h2-tablet;
-      line-height: 48px;
-    }
-  }
-}*/
+}
 .main-block {
   width: 320px;
   margin: 0 auto;
@@ -996,6 +995,7 @@
   min-height: 127px;
   width: 700px;
   padding: 0 40px;
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: #fff;
 }
