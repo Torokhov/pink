@@ -84,6 +84,10 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
+
+  svg {
+    display: none;
+  }
 }
 
 .review {
@@ -374,7 +378,7 @@
   }
 }
 
-@media(min-width: 700px) and (max-width: 1200px) {
+@media(min-width: 700px) and (max-width: 1440px) {
   .main-block {
 //    min-width: 700px;
 //    max-width: 1200px;
@@ -484,7 +488,7 @@
       top: 60px;
       left: 40px;
 
-      fill: @color-gray;
+      fill: @color-gray--dark;
     }
   }
 
@@ -667,47 +671,111 @@
   }
 }
 
-/* @media(min-width: 1200px) {
+@media(min-width: 1200px) and (max-width: 1440px) {
   .main-block {
-    min-width: 1200px;
-    max-width: 1440px;
+    width: 1200px;
   }
 
   .app-features {
+    width: 1200px;
+
     &__head {
       width: 780px;
+      padding: 75px 0px;
+      margin-bottom: 105px;
 
       font-size: 50px;
       line-height: 50px;
     }
+
+    &::after {
+      display: none;
+    }
   }
 
-   .feature-wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-end;
-//      padding: 0 40px;
-      min-height: 520px;
-      box-sizing: border-box;
+  .feature-wrapper {
+    .sloping-background(-1295px, 96px, 1200px);
+
+    min-height: 469px;
+    padding: 0 155px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .feature {
-    margin-bottom: 40px;
-    width: 252px;
+    position: relative;
+
+    width: 250px;
+    min-height: 205px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -357px;
+      left: 34px;
+
+      width: 187px;
+      height: 306px;
+
+      background-image: url("../../img/decor/iphone-laptop.png");
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+
+    &:first-child::after {
+      content: "";
+      position: absolute;
+      top: -313px;
+      left: 42px;
+
+      width: 170px;
+      height: 264px;
+
+      background-image: url("../../img/decor/screen1-laptop.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      top: -313px;
+      left: 42px;
+
+      width: 170px;
+      height: 264px;
+
+      background-image: url("../../img/decor/screen2-laptop.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: -313px;
+      left: 42px;
+
+      width: 170px;
+      height: 264px;
+
+      background-image: url("../../img/decor/screen3-laptop.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
     &__head {
-      width: inherit;
-      margin-bottom: 44px;
-
       font-size: 30px;
       line-height: 30px;
+      text-align: center;
     }
 
     &__describe {
-      width: 252px;
-      margin: 0 auto;
-
       font-size: 18px;
       line-height: 30px;
       text-align: center;
@@ -715,59 +783,72 @@
   }
 
   .research-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0 120px;
-    min-height: 450px;
-    box-sizing: border-box;
+    padding: 0px 160px;
+    padding-top: 155px;
+    padding-bottom: 110px;
 
     background-color: @color-gray;
+
+    &::before {
+      width: 224px;
+      height: 224px;
+      top: 147px;
+      left: 165px;
+
+      font-size: 120px;
+      line-height: 180px;
+    }
+
+    svg {
+      width: 310px;
+      height: 350px;
+      left: 122px;
+    }
   }
 
   .research {
-    width: 50%;
+    width: 542px;
 
     &__head {
-      width: 180px;
-
-      font-size: 30px;
-      line-height: 30px;
-      text-align: left;
+      width: 300px;
+      margin-bottom: 27px;
     }
 
     &__describe {
+      margin-bottom: 30px;
+
       font-size: 18px;
       line-height: 30px;
     }
 
     &__link {
       font-size: 18px;
-      color: @color-pink;
-      text-decoration: underline;
+    }
+  }
+
+  .reviews-block {
+    position: relative;
+    min-height: 410px;
+    padding: 0 190px;
+    padding-bottom: 35px;
+
+    svg {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 550px;
+
+      fill: @color-gray;
     }
   }
 
   .review {
-    position: relative;
-    flex-direction: column;
-
-    &__text {
-      width: 694px;
-
-      font-size: 18px;
-    }
-
     &__autor {
       font-size: 24px;
-      line-height: 30px;
     }
 
     &__autor-describe {
-      display: block;
       font-size: 18px;
-      line-height: 30px;
     }
   }
 
@@ -777,86 +858,105 @@
 
   .switch-btn {
     display: block;
-    width: 22px;
-    height: 42px;
+    width: 30px;
+    height: 46px;
     position: absolute;
 
+    &--forward,
     &--back {
-      top: 150px;
-      left: 200px;
+      top: 210px;
     }
 
     &--forward {
-      top: 150px;
-      right: 200px;
+      right: 130px;
+    }
+
+    &--back {
+      left: 130px;
     }
   }
 
   .price-list {
-    padding: 0 120px;
-    box-sizing: border-box;
+    .sloping-background(-1199px, 94px, 1200px);
+
+    width: 1200px;
+    padding-top: 94px;
+  }
+
+  .price-table-wrapper {
+    width: 1200px;
+    padding-top: 63px;
+    padding-bottom: 96px;
   }
 
   .price-table {
-    margin-bottom: 30px;
-    min-width: 100%;
-//    width: 100%;
+    width: 940px;
+    min-height: 280px;
 
-    &__feature {
-      display: none;
+    &__price-value {
+      font-size: 24px;
+      line-height: 30px;
     }
 
-    th {
-//    width: 152px;
-      height: 75px;
-       &:first-child {
-        display: table-cell;
-        background-color: @color-gray;
-      }
-    }
-
-    td {
-      &:first-child {
-        display: table-cell;
-      }
+    &__main-feature {
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 
   .contacts-block {
+    padding-top: 70px;
+
     &__head {
-      width: 470px;
+      width: 461px;
 
       font-size: 50px;
-      line-height: 50px;
     }
 
     &__item {
-      &:first-child {
-//        width: 30%;
-        order: 0;
-      }
+      margin-bottom: 0px;
 
-      &:nth-child(3) {
-//        width: 30%;
-        order: 0;
+      b {
+        margin-bottom: 20px;
       }
+    }
 
-      &:nth-child(2) {
-//        width: 30%;
-        order: 0;
-      }
+    &__item:first-child,
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      width: 33%;
+    }
+
+    &__item:first-child {
+      order: 1;
+    }
+
+    &__item:nth-child(2) {
+      order: 3;
+    }
+
+    &__item:nth-child(3) {
+      order: 2;
     }
   }
 
-  .map {
-    min-height: 525px;
+  .contacts-wrapper {
+    .triangle-bottom(347px, 600px, 121px);
+
+    min-height: 171px;
+    align-items: flex-start;
+    padding: 0 118px;
+    padding-top: 62px;
   }
 
-  .contacts-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  .map {
+    min-height: 526px;
+
+    background-image: url("../../img/decor/map-laptop.jpg");
+
+    &::before {
+      top: 289px;
+      left: 571px;
+    }
   }
-}*/
+}
