@@ -1137,65 +1137,27 @@
     display: flex;
   }
 }
-/* @media(min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
   .main-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 127px;
-
-    background-color: @color-white;
+    width: 1200px;
+    min-height: 198px;
+    padding: 0 130px;
   }
-
-  .logo {
-    &--footer {
-      color: @color-black;
-    }
+  .logo--footer {
+    font-size: 0px;
   }
-
-  .social-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 179px;
+  .logo--footer::before {
+    top: -12px;
+    left: 0px;
+    width: 146px;
+    background-image: url("../../img/sprites/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
   }
-
-  .social-btn {
-    display: block;
-    width: 43px;
-    height: 42px;
-
-    border: 3px solid @color-gray;
-    border-radius: 50%;
-  }
-
   .copyright {
-    position: relative;
-
     font-size: 18px;
-    line-height: 18px;
   }
-
-  .autor-logo {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 27px;
-      height: 30px;;
-    }
-  }
-
-  .htmlacademy-logo {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 27px;
-      height: 33px;
-    }
-  }
-}*/
+}
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
