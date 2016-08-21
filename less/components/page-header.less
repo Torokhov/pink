@@ -310,13 +310,22 @@
 
     &__link {
       text-transform: capitalize;
+
+      &:hover,
+      &:active {
+        color: @color-white;
+
+        border-bottom: 2px solid @color-white;
+      }
     }
   }
 
   .logo {
     font-size: 0px;
 
-    &::before {
+    &::before,
+    &:hover::before,
+    &:active::before {
       top: 28px;
       left: 130px;
       width: 146px;
