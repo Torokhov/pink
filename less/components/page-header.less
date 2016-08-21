@@ -71,7 +71,7 @@
     }
 
     &:active {
-      opacity: 0.5;
+      opacity: @opacity-value;
     }
   }
 }
@@ -123,7 +123,7 @@
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: @opacity-value;
   }
 }
 
@@ -186,7 +186,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: @opacity-value;
   }
 }
 
@@ -238,7 +238,7 @@
     }
 
     &:active {
-      color: #66717d;
+      color: @logo-header-color--active;
 
       &::before {
         background-position: -146px -40px;
@@ -264,7 +264,7 @@
     &__system-requirements {
       width: 320px;
 
-      font-size: 18px;
+//      font-size: 18px;
       text-align: center;
     }
   }
@@ -358,6 +358,6 @@
   }
 
   .btn-load-app {
-    font-size: 21px;
+    font-size: @font-size--btn-load-app;
   }
 }

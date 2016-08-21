@@ -19,7 +19,7 @@
 
 .logo {
   &--footer {
-    color: #283645;
+    color: @logo-footer-color;
 
     &::before {
       content: "";
@@ -39,7 +39,7 @@
     }
 
     &:active {
-      color: #bec2c7;
+      color: @logo-footer-color--active;
 
       &::before {
         background-position: 0px -80px;
@@ -76,11 +76,11 @@
   }
 
   &:hover {
-    border-color: #283645;
+    border-color: @social-btn-color--hover;
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: @opacity-value;
   }
 }
 
@@ -88,7 +88,7 @@
   min-width: 190px;
   min-height: 30px;
 
-  font-size: 14px;
+  font-size: @html-size-alt;
 
   z-index: 7;
 
@@ -115,13 +115,13 @@
 
   &:hover {
     svg {
-      fill: #283645;
+      fill: @copyright-color--hover;
     }
   }
 
   &:active {
     svg {
-      opacity: 0.5;
+      opacity: @opacity-value;
     }
   }
 }
@@ -166,6 +166,6 @@
   .copyright {
     min-width: 207px;
 
-    font-size: 18px;
+    font-size: @html-size-base;
   }
 }

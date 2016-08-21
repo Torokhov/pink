@@ -60,8 +60,8 @@
   &__describe {
     padding: 0 20px;
 
-    font-size: 14px;
-    line-height: 24px;
+    font-size: @html-size-alt;
+    line-height: @html-line-height-alt;
     text-align: center;
   }
 }
@@ -102,7 +102,7 @@
     box-sizing: border-box;
 
     text-align: center;
-    font-size: 14px;
+    font-size: @html-size-alt;
   }
 
   &__autor {
@@ -148,7 +148,7 @@
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: @opacity-value;
   }
 
   &--active {
@@ -250,7 +250,7 @@
     padding: 0 25px;
     box-sizing: border-box;
 
-    font-size: 14px;
+    font-size: @html-size-alt;
     text-transform: uppercase;
 
     background-color: @color-white;
@@ -282,7 +282,7 @@
     top: 8px;
     left: -22px;
 
-    font-size: 14px;
+    font-size: @html-size-alt;
     font-weight: @font-weight;
     color: @color-white;
 
@@ -331,7 +331,7 @@
       }
 
       &:active {
-        opacity: 0.5;
+        opacity: @opacity-value;
       }
     }
   }
@@ -398,8 +398,8 @@
       justify-content: flex-start;
       align-items: center;
 
-      font-size: 40px;
-      line-height: 40px;
+      font-size: @font-size--h2-tablet;
+      line-height: @line-height--h2-tablet;
 
       p:first-child {
         margin: 0;
@@ -492,36 +492,36 @@
     }
   }
 
-  .research {
+  .research { //конец
     width: 310px;
 
     &__head {
       width: 180px;
       margin-bottom: 18px;
 
-      font-size: 30px;
-      line-height: 30px;
+      font-size: @font-size--h3-tablet;
+      line-height: @line-height--h3-tablet;
       text-align: left;
     }
 
     &__describe {
       margin-bottom: 5px;
 
-      font-size: 14px;
-      line-height: 24px;
+      font-size: @html-size-alt;
+      line-height: @html-line-height-alt;
     }
 
     &__link {
-      font-size: 14px;
+      font-size: @html-size-alt;
       color: @color-pink;
       text-decoration: underline;
 
       &:hover {
-        color: black;
+        color: @color-black;
       }
 
       &:active {
-        opacity: 0.5;
+        opacity: @opacity-value;
       }
     }
   }
@@ -538,22 +538,22 @@
     &__autor {
       margin-bottom: 0px;
 
-      font-size: 20px;
-      line-height: 30px;
+      font-size: @font-size--review-autor;
+//      line-height: 30px;
     }
 
     &__text {
       margin-bottom: 38px;
 
-      font-size: 18px;
-      line-height: 30px;
+//      font-size: 18px;
+//      line-height: 30px;
     }
 
     &__autor-describe {
       display: block;
 
-      font-size: 14px;
-      line-height: 30px;
+      font-size: @html-size-alt;
+//      line-height: 30px;
     }
   }
 
@@ -597,7 +597,7 @@
       padding: 0;
       text-align: center;
 
-      font-size: 14px;
+      font-size: @html-size-alt;
       text-transform: capitalize;
 
       &:first-child {
@@ -625,7 +625,7 @@
       width: 374px;
       margin-bottom: 0;
 
-      font-size: 40px;
+      font-size: @font-size--h2-tablet;
       line-height: 53px;
     }
 
@@ -684,8 +684,8 @@
       padding: 75px 0px;
       margin-bottom: 105px;
 
-      font-size: 50px;
-      line-height: 50px;
+      font-size: @font-size--h2-laptop;
+      line-height: @line-height--h2-laptop;
     }
 
     &::after {
@@ -757,14 +757,14 @@
     }
 
     &__head {
-      font-size: 30px;
-      line-height: 30px;
+      font-size: @font-size--h3-laptop;
+      line-height: @font-size--h3-laptop;
       text-align: center;
     }
 
     &__describe {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: @html-size-base;
+      line-height: @html-line-height-base;
       text-align: center;
     }
   }
@@ -804,12 +804,12 @@
     &__describe {
       margin-bottom: 30px;
 
-      font-size: 18px;
-      line-height: 30px;
+      font-size: @html-line-height-base;
+      line-height: @html-line-height-base;
     }
 
     &__link {
-      font-size: 18px;
+      font-size: @html-size-base;
     }
   }
 
@@ -831,11 +831,11 @@
 
   .review {
     &__autor {
-      font-size: 24px;
+      font-size: @font-size--review-autor-laptop;
     }
 
     &__autor-describe {
-      font-size: 18px;
+      font-size: @html-size-base;
     }
   }
 
@@ -942,13 +942,13 @@
     min-height: 280px;
 
     &__price-value {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: @font-size--price-value;
+      line-height: @html-line-height-base;
     }
 
     &__main-feature {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: @html-size-base;
+      line-height: @html-line-height-base;
     }
   }
 
@@ -958,7 +958,7 @@
     &__head {
       width: 461px;
 
-      font-size: 50px;
+      font-size: @font-size--h2-laptop;
     }
 
     &__item {

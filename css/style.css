@@ -136,7 +136,7 @@
   background-color: #fff;
 }
 .btn-load-app:active {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .os-icons-wrapper {
   display: flex;
@@ -195,7 +195,6 @@
   }
   .app-information__system-requirements {
     width: 320px;
-    font-size: 18px;
     text-align: center;
   }
   .load-app-wrapper {
@@ -692,7 +691,7 @@
     text-decoration: underline;
   }
   .research__link:hover {
-    color: black;
+    color: #000;
   }
   .research__link:active {
     opacity: 0.5;
@@ -707,17 +706,13 @@
   .review__autor {
     margin-bottom: 0px;
     font-size: 20px;
-    line-height: 30px;
   }
   .review__text {
     margin-bottom: 38px;
-    font-size: 18px;
-    line-height: 30px;
   }
   .review__autor-describe {
     display: block;
     font-size: 14px;
-    line-height: 30px;
   }
   .price-list {
     min-height: 380px;
@@ -928,7 +923,7 @@
   }
   .research__describe {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 30px;
   }
   .research__link {
