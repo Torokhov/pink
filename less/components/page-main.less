@@ -717,53 +717,40 @@
       content: "";
       position: absolute;
       top: -357px;
-      left: 34px;
+      left: -2px;
 
-      width: 187px;
+      width: 248px;
       height: 306px;
 
-      background-image: url("../../img/decor/iphone-laptop.png");
-      background-repeat: no-repeat;
-      background-position: top;
+      background-image: url("../../img/decor/iphone-laptop.png"),
+                        url("../../img/decor/shadow.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: center top, center 296px;
     }
 
-    &:first-child::after {
+    &::after {
       content: "";
       position: absolute;
       top: -313px;
-      left: 42px;
+      left: 36px;
 
       width: 170px;
-      height: 264px;
+      height: 262px;
+    }
 
+    &:first-child::after {
       background-image: url("../../img/decor/screen1-laptop.jpg");
       background-repeat: no-repeat;
       background-position: center;
     }
 
     &:nth-child(2)::after {
-      content: "";
-      position: absolute;
-      top: -313px;
-      left: 42px;
-
-      width: 170px;
-      height: 264px;
-
       background-image: url("../../img/decor/screen2-laptop.jpg");
       background-repeat: no-repeat;
       background-position: center;
     }
 
     &:nth-child(3)::after {
-      content: "";
-      position: absolute;
-      top: -313px;
-      left: 42px;
-
-      width: 170px;
-      height: 264px;
-
       background-image: url("../../img/decor/screen3-laptop.jpg");
       background-repeat: no-repeat;
       background-position: center;
