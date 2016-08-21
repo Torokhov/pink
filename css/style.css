@@ -791,6 +791,7 @@
   .map {
     min-height: 380px;
     background-image: url("../../img/decor/map-tablet.jpg");
+    background-position: 0px -340px;
   }
   .map::before {
     top: 199px;
@@ -1091,10 +1092,11 @@
   .map {
     min-height: 526px;
     background-image: url("../../img/decor/map-laptop.jpg");
+    background-position: 0px -258px;
   }
   .map::before {
-    top: 289px;
-    left: 571px;
+    top: 280px;
+    left: 580px;
   }
 }
 .main-footer {
