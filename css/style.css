@@ -169,7 +169,16 @@
     height: 40px;
     background-image: url("../../img/sprites/spritesheet.png");
     background-repeat: no-repeat;
-    background-position: -59px -80px;
+    background-position: -146px -80px;
+  }
+  .logo:hover::before {
+    background-position: -146px 0px;
+  }
+  .logo:active {
+    color: #66717d;
+  }
+  .logo:active::before {
+    background-position: -146px -40px;
   }
   .app-information {
     padding: 0 20px;
@@ -1061,7 +1070,7 @@
   position: relative;
 }
 .logo--footer {
-  color: #000;
+  color: #283645;
 }
 .logo--footer::before {
   content: "";
@@ -1072,6 +1081,15 @@
   height: 40px;
   background-image: url("../../img/sprites/spritesheet.png");
   background-repeat: no-repeat;
+  background-position: -146px 0px;
+}
+.logo--footer:hover::before {
+  background-position: -59px -80px;
+}
+.logo--footer:active {
+  color: #bec2c7;
+}
+.logo--footer:active::before {
   background-position: 0px -80px;
 }
 .social-block {
@@ -1096,7 +1114,7 @@
   fill: #d22856;
 }
 .social-btn:hover {
-  border-color: #000;
+  border-color: #283645;
 }
 .social-btn:active {
   opacity: 0.5;
@@ -1126,7 +1144,7 @@
 }
 .autor-logo:hover svg,
 .htmlacademy-logo:hover svg {
-  fill: #000;
+  fill: #283645;
 }
 .autor-logo:active svg,
 .htmlacademy-logo:active svg {

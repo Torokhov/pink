@@ -230,7 +230,19 @@
 
       background-image: url("../../img/sprites/spritesheet.png");
       background-repeat: no-repeat;
-      background-position: -59px -80px;
+      background-position: -146px -80px;
+    }
+
+    &:hover::before {
+      background-position: -146px 0px;
+    }
+
+    &:active {
+      color: #66717d;
+
+      &::before {
+        background-position: -146px -40px;
+      }
     }
   }
 

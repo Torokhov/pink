@@ -16,15 +16,33 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-logo-glasses-footer-tablet {
+.icon-logo-glasses-footer-active-tablet {
   background-image: url(../img/sprites/spritesheet.png);
   background-position: 0px -80px;
   width: 59px;
   height: 40px;
 }
-.icon-logo-glasses-header-tablet {
+.icon-logo-glasses-footer-hover-tablet {
   background-image: url(../img/sprites/spritesheet.png);
   background-position: -59px -80px;
+  width: 59px;
+  height: 40px;
+}
+.icon-logo-glasses-footer-tablet {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -146px 0px;
+  width: 59px;
+  height: 40px;
+}
+.icon-logo-glasses-header-active-tablet {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -146px -40px;
+  width: 59px;
+  height: 40px;
+}
+.icon-logo-glasses-header-tablet {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -146px -80px;
   width: 59px;
   height: 40px;
 }

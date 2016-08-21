@@ -18,7 +18,7 @@
 
 .logo {
   &--footer {
-    color: @color-black;
+    color: #283645;
 
     &::before {
       content: "";
@@ -30,7 +30,19 @@
 
       background-image: url("../../img/sprites/spritesheet.png");
       background-repeat: no-repeat;
-      background-position: 0px -80px;
+      background-position: -146px 0px;
+    }
+
+    &:hover::before {
+      background-position: -59px -80px;
+    }
+
+    &:active {
+      color: #bec2c7;
+
+      &::before {
+        background-position: 0px -80px;
+      }
     }
   }
 }
@@ -61,7 +73,7 @@
   }
 
   &:hover {
-    border-color: @color-black;
+    border-color: #283645;
   }
 
   &:active {
@@ -98,7 +110,7 @@
 
   &:hover {
     svg {
-      fill: @color-black;
+      fill: #283645;
     }
   }
 
