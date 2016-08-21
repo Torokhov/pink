@@ -970,16 +970,62 @@
     width: 30px;
     height: 46px;
     position: absolute;
+    background-color: transparent;
+    border: none;
   }
   .switch-btn--forward,
   .switch-btn--back {
     top: 210px;
   }
+  .switch-btn--forward::before,
+  .switch-btn--back::before,
+  .switch-btn--forward::after,
+  .switch-btn--back::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 2px;
+    background-color: #f2f2f2;
+  }
+  .switch-btn--forward:hover::before,
+  .switch-btn--back:hover::before,
+  .switch-btn--forward:hover::after,
+  .switch-btn--back:hover::after {
+    background-color: #bfbfbf;
+  }
+  .switch-btn--forward::after,
+  .switch-btn--back::after {
+    top: 28px;
+  }
+  .switch-btn--forward::before,
+  .switch-btn--back::before {
+    top: 6px;
+  }
   .switch-btn--forward {
     right: 130px;
   }
+  .switch-btn--forward::after,
+  .switch-btn--forward::before {
+    right: -6px;
+  }
+  .switch-btn--forward::after {
+    transform: rotate(-45deg);
+  }
+  .switch-btn--forward::before {
+    transform: rotate(45deg);
+  }
   .switch-btn--back {
     left: 130px;
+  }
+  .switch-btn--back::after,
+  .switch-btn--back::before {
+    left: -6px;
+  }
+  .switch-btn--back::after {
+    transform: rotate(-135deg);
+  }
+  .switch-btn--back::before {
+    transform: rotate(135deg);
   }
   .price-list {
     width: 1200px;

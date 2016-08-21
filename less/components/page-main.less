@@ -860,19 +860,80 @@
     display: block;
     width: 30px;
     height: 46px;
+
     position: absolute;
+
+    background-color: transparent;
+    border: none;
 
     &--forward,
     &--back {
       top: 210px;
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+
+        width: 31px;
+        height: 2px;
+
+        background-color: @color-gray;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: @color-gray--dark;
+      }
+
+      &::after {
+        top: 28px;
+//        transform: rotate(-45deg);
+      }
+
+      &::before {
+        top: 6px;
+//        transform: rotate(45deg);
+      }
     }
 
     &--forward {
       right: 130px;
+
+      &::after,
+      &::before {
+        right: -6px;
+      }
+
+      &::after {
+//        right: 0px;
+        transform: rotate(-45deg);
+      }
+
+      &::before {
+//        right: 0px;
+        transform: rotate(45deg);
+      }
     }
 
     &--back {
       left: 130px;
+
+      &::after,
+      &::before {
+        left: -6px;
+      }
+
+      &::after {
+//        left: 0px;
+        transform: rotate(-135deg);
+      }
+
+      &::before {
+//        left: 0px;
+        transform: rotate(135deg);
+      }
     }
   }
 
